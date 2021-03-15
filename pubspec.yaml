@@ -1,0 +1,70 @@
+name: ifood_flutter_clone
+description: A new Flutter project.
+
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  tab_indicator_styler: ^1.0.0
+  flutter_svg: ^0.19.3
+
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  assets:
+    - "assets/icons/"
+    - "assets/icons/bottom/"
+    - "assets/icons/ordenation/"
+    - "assets/images/"
+    - "assets/images/categorys/"
+    
+  fonts:
+    - family: "Nunito Sans"
+      fonts:
+        - asset: "assets/fonts/googleFonts/Nunito-Sans/Nunito-Sans-200i.ttf"
+          style: "italic"
+          weight: 200
+        - asset: "assets/fonts/googleFonts/Nunito-Sans/Nunito-Sans-300i.ttf"
+          style: "italic"
+          weight: 300
+        - asset: "assets/fonts/googleFonts/Nunito-Sans/Nunito-Sans-400i.ttf"
+          style: "italic"
+          weight: 400
+        - asset: "assets/fonts/googleFonts/Nunito-Sans/Nunito-Sans-600i.ttf"
+          style: "italic"
+          weight: 600
+        - asset: "assets/fonts/googleFonts/Nunito-Sans/Nunito-Sans-700i.ttf"
+          style: "italic"
+          weight: 700
+        - asset: "assets/fonts/googleFonts/Nunito-Sans/Nunito-Sans-800i.ttf"
+          style: "italic"
+          weight: 800
+        - asset: "assets/fonts/googleFonts/Nunito-Sans/Nunito-Sans-900i.ttf"
+          style: "italic"
+          weight: 900
+        - asset: "assets/fonts/googleFonts/Nunito-Sans/Nunito-Sans-200.ttf"
+          weight: 200
+        - asset: "assets/fonts/googleFonts/Nunito-Sans/Nunito-Sans-300.ttf"
+          weight: 300
+        - asset: "assets/fonts/googleFonts/Nunito-Sans/Nunito-Sans-400.ttf"
+          weight: 400
+        - asset: "assets/fonts/googleFonts/Nunito-Sans/Nunito-Sans-600.ttf"
+          weight: 600
+        - asset: "assets/fonts/googleFonts/Nunito-Sans/Nunito-Sans-700.ttf"
+          weight: 700
+        - asset: "assets/fonts/googleFonts/Nunito-Sans/Nunito-Sans-800.ttf"
+          weight: 800
+        - asset: "assets/fonts/googleFonts/Nunito-Sans/Nunito-Sans-900.ttf"
+          weight: 900
+
+  uses-material-design: true
