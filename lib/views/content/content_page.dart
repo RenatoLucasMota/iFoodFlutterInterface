@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ifood_flutter_clone/core/theme/app_colors.dart';
 import 'package:ifood_flutter_clone/core/theme/app_icons.dart';
-import 'package:ifood_flutter_clone/core/theme/app_typography.dart';
 import 'package:ifood_flutter_clone/views/content/components/bottom_navigator_component.dart';
-import 'package:tab_indicator_styler/tab_indicator_styler.dart';
 
 import 'components/content_tab_bar_component.dart';
 import 'components/header_local_component.dart';
