@@ -4,7 +4,7 @@ import 'app_colors.dart';
 
 class AppTheme {
   static ThemeData get theme => ThemeData(
-        fontFamily: 'Nunito-Sans',
+        fontFamily: 'Nunito Sans',
         primarySwatch: AppColors.primaryColor,
       );
 }
