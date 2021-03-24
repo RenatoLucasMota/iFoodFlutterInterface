@@ -33,9 +33,6 @@ class BottomNavigatorComponent extends StatelessWidget {
                   .toList(),
             ),
           ),
-          SizedBox(
-            height: MediaQuery.of(context).padding.bottom,
-          ),
         ],
       ),
     );
@@ -77,16 +74,15 @@ class BottomNavigatorItemComponent extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Padding(
-        padding: const EdgeInsets.all(12),
+        padding: const EdgeInsets.symmetric(horizontal: 12),
         child: Column(
           children: [
             AppIcon(isActive ? activeIcon : icon),
             Text(
               label,
               style: TextStyle(
-                fontSize: 10,
-                fontWeight: isActive ? FontWeight.bold : FontWeight.normal
-              ),
+                  fontSize: 10,
+                  fontWeight: isActive ? FontWeight.bold : FontWeight.normal),
             ),
           ],
         ),
