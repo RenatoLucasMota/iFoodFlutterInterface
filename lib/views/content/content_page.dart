@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:ifood_flutter_clone/controllers/content_controller.dart';
 import 'package:ifood_flutter_clone/core/theme/app_colors.dart';
 import 'package:ifood_flutter_clone/core/theme/app_icons.dart';
+import 'package:ifood_flutter_clone/core/theme/app_images.dart';
 import 'package:ifood_flutter_clone/models/category.dart';
 import 'package:ifood_flutter_clone/views/content/components/bottom_navigator_component.dart';
 
+import 'components/banners_component.dart';
 import 'components/category_item_component.dart';
 import 'components/content_tab_bar_component.dart';
 import 'components/filters_component.dart';
@@ -73,10 +75,31 @@ class _ContentPageState extends State<ContentPage>
                                         index == categorys.length - 1 ? 16 : 10,
                                   ),
                                   child: CategoryItemComponent(
-                                    category: categorys[index],
+                                    category: categorys[index], 
                                   ),
                                 );
                               },
+                            ),
+                          ),
+                        ),
+                        SliverToBoxAdapter(
+                          child: SizedBox(
+                            height: 170,
+                            child: BannersComponent(
+                              list: [
+                                BannerItemComponent(
+                                  imagePath: AppImages.banner1,
+                                ),
+                                BannerItemComponent(
+                                  imagePath: AppImages.banner2,
+                                ),
+                                BannerItemComponent(
+                                  imagePath: AppImages.banner3,
+                                ),
+                                BannerItemComponent(
+                                  imagePath: AppImages.banner4,
+                                )
+                              ],
                             ),
                           ),
                         ),
