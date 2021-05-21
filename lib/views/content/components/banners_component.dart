@@ -11,7 +11,7 @@ class BannersComponent extends StatefulWidget {
 }
 
 class _BannersComponentState extends State<BannersComponent> {
-  final PageController _pageController = PageController(viewportFraction: 0.8);
+  final PageController _pageController = PageController(viewportFraction: 0.8, initialPage: 1);
   int _currentIndex = 0;
   @override
   void initState() {
@@ -21,7 +21,7 @@ class _BannersComponentState extends State<BannersComponent> {
 
   _onChangePage() {
     setState(() {
-      _currentIndex = _pageController.page.toInt();
+      _currentIndex = _pageController.page.round();
     });
   }
 

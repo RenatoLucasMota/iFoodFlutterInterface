@@ -37,4 +37,26 @@ class AppTypography {
           fontSize: 13,
         );
   }
+
+  static TextStyle sessionTitle(BuildContext context) {
+    return Theme.of(context).textTheme.bodyText1.copyWith(
+          fontWeight: FontWeight.w600,
+          fontSize: 16,
+        );
+  }
+
+  static TextStyle restaurantTitle(BuildContext context) {
+    return Theme.of(context).textTheme.bodyText1.copyWith(
+          fontWeight: FontWeight.w700,
+          fontSize: 14,
+        );
+  }
+
+  static TextStyle restaurantDetails(BuildContext context) {
+    return Theme.of(context).textTheme.bodyText1.copyWith(
+          fontWeight: FontWeight.normal,
+          fontSize: 12,
+          color: AppColors.grey7
+        );
+  }
 }
